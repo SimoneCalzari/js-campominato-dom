@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  align-items: center;
+}
+
+header label {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+header select {
+  width: 100px;
+  background-color: #e9e9ed;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+header button {
+  padding: 3px 20px;
+  margin-left: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header button:hover , header select:hover {
+  background-color: lightgray;
+}
+
+
+header div img {
+  width: 75%;
+}
+
+main {
+  flex-grow: 1;
+  background-color: #7fffd4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.field {
+  width: 400px;
+  height: 400px;
+  flex-wrap: wrap;
+  align-content: start;
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+.field > div {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cell-10 {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+}
+
+.cell-9 {
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+}
+
+.cell-7 {
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+}
+
+.cell-clicked {
+  background-color: lightseagreen;
+}
+
+footer {
+  padding: 20px;
+  font-size: 18px;
+}
