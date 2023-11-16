@@ -94,11 +94,29 @@ main {
   height: calc(100% / 7);
 }
 
-.cell-clicked {
-  background-color: lightseagreen;
+.cell-no-bomb {
+  background-color: aqua;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+.cell-bomb {
+  background-color: red;
+  color: white;
 }
 
 footer {
   padding: 20px;
   font-size: 18px;
+  display: flex;
+}
+
+#footer-text, #vinto-perso {
+  width: 50%;
+}
+
+#vinto-perso {
+  font-size: 22px;
 }
