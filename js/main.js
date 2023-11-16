@@ -24,7 +24,8 @@ function newElements(typeElement, classElement, numElements) {
               div.classList.add('cell-bomb');
             }
           }
-        } else {
+        } 
+        else {
           cell.classList.add('cell-no-bomb'); // AGGIUNGO CLASSE PER CASO CELLA SENZA BOMBA
           cell.classList.add('no-click'); // IMPEDISCO DI CLICCARE SU UNA CELLA GIA CLICCATA
           counterNoBomb++; // INCREMENTO PUNTEGGIO AD OGNI CELLA NON BOMBA CLICCATA
@@ -38,10 +39,6 @@ function newElements(typeElement, classElement, numElements) {
     )
   }
 }
-
-
-
-
 
 
 // FUNZIONE CHE AGGIUNGE UN EVENTLISTENER AL BOTTONE PLAY QUANDO CLICCO PER GENERARE IL GIOCO
@@ -70,7 +67,6 @@ function myGame() {
         createBombs(numBombs, 100);
         console.log(positionBombs);
       }
-      
     }
   )
 }
@@ -81,6 +77,7 @@ function randomTraNumeriCompresi(inf,sup) {
   const numRandom = inf + Math.floor(Math.random() * (sup - inf + 1));
   return numRandom;
 }
+
 
 // FUNZIONE PER GENERARE ARRAY CON POSIZIONE BOMBE
 function createBombs(numBombs, maxCells) {
